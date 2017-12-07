@@ -23,6 +23,11 @@ const slides = [
     <div>
       <h2>Slide 2 blah blah blah</h2>
     </div>
+  ),
+  (
+    <div>
+      <h2>Slide 3 Caitlin testing it out and stuff</h2>
+    </div>
   )
 ];
 

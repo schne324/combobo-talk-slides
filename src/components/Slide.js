@@ -11,7 +11,7 @@ class Slide extends Component {
         <div className={`bob-content ${isActive ? '' : dirClass}`}>{this.props.children}</div>
         <div className='bob-foot'>
           <img src={logo} alt='Deque' width={'52'} />
-          <p className='notice'>&copy; {new Date().getFullYear()} - All Rights Reserved</p>
+          <p className='notice'>&copy; 2018 - All Rights Reserved</p>
           <div className='slide-number'>
             <span className='offscreen'>Slide number: </span>
             <span>{this.props.slideIndex + 1}</span>
