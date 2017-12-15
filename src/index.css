@@ -11,6 +11,39 @@ body {
   box-shadow: 0 0 10px #ccc;
 }
 
+.two-col {
+  width: 50%;
+  padding: 0 5%;
+  float: left;
+}
+
+.two-col img {
+  max-width: 100%;
+}
+
+.profile h3, .profile p {
+  text-align: center;
+}
+
+.title-slide {
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.title-centered {
+  text-align: center;
+}
+
+/* so that every slide has a high-level heading */
+.title-offscreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
