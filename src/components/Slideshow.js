@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Show from './Show';
-import {length} from './slides/';
+import { length } from './slides/';
 import './Slideshow.css';
 
 const nexts = [39, 40];
@@ -20,6 +20,11 @@ class Slideshow extends Component {
       slide: (hash && hash > 0 && hash <= length)  ? (parseInt(hash, 10) - 1) : 0,
       direction: 'next'
     };
+
+    this.updateDimensions = this.updateDimensions.bind(this);
+    this.handleKeydown = this.handleKeydown.bind(this);
+    this.handleTouchStart = this.handleTouchStart.bind(this);
+    this.handleTouchMove = this.handleTouchMove.bind(this);
   }
 
   render() {
@@ -86,17 +91,17 @@ class Slideshow extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', () => this.updateDimensions());
-    document.body.addEventListener('keydown', (e) => this.handleKeydown(e));
-    document.addEventListener('touchstart', this.handleTouchStart.bind(this));
-    document.addEventListener('touchmove', this.handleTouchMove.bind(this))
+    window.addEventListener('resize', this.updateDimensions);
+    document.body.addEventListener('keydown', this.handleKeydown);
+    document.addEventListener('touchstart', this.handleTouchStart);
+    document.addEventListener('touchmove', this.handleTouchMove)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize');
-    document.body.removeEventListener('keydown');
-    document.removeEventListener('touchstart');
-    document.removeEventListener('touchmove');
+    window.removeEventListener('resize', this.updateDimensions);
+    document.body.removeEventListener('keydown', this.handleKeydown);
+    document.removeEventListener('touchstart', this.handleTouchStart);
+    document.removeEventListener('touchmove', this.handleTouchMove);
   }
 }
 

@@ -54,7 +54,7 @@ const slides = [
   ),
   (
     <div>
-      <h2>Today, we&#39;re talking about:</h2>
+      <h2>{'Today, we\'re talking about:'}</h2>
       <ul>
         <li>Collaboration</li>
         <li>Comboboxes</li>
@@ -109,6 +109,26 @@ const slides = [
       <div className="two-col">
         <h2 className="align-left white-text">Developer</h2>
       </div>
+    </div>
+  ),
+  (
+    <div>
+      <h1>Prototyping</h1>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Types of prototypes</h2>
+      <ul>
+        <li><strong>Low fidelity</strong> for testing layout, content, etc.</li>
+        <li><strong>Higher fidelity</strong> for testing with keyboard / AT users</li>
+        <li><strong>Interactive</strong> for testing...interactions</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h1>Interactive Prototype Case Study: Combobo</h1>
     </div>
   )
 ];

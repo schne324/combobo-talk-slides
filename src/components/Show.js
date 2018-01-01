@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slide from './Slide';
 import slides from './slides/';
+import queryAll from '../utils/query-all';
 
 const initialSize = {
   width: 600,
@@ -14,7 +15,13 @@ class Show extends Component {
     const slideStyle = {transform: `scale(${(Math.min(xScale, yScale) - .02)})`};
     const allSlides = slides.map((stuff, i) => {
       return (
-        <Slide style={slideStyle} key={i} activeIndex={this.props.slide} slideIndex={i} dir={this.props.direction}>
+        <Slide
+          style={slideStyle}
+          key={i}
+          slideIndex={i}
+          activeIndex={this.props.slide}
+          dir={this.props.direction}
+        >
           {stuff}
         </Slide>
       )
@@ -28,27 +35,16 @@ class Show extends Component {
   }
 
   cleanUp() {
-    Array.prototype.slice.call(
-      document.querySelectorAll('.bob-content.fade-in')
-    ).forEach((el) => el.classList.remove('fade-in'));
+    queryAll('.bob-content.fade-in')
+      .forEach((el) => el.classList.remove('fade-in'));
   }
 
   animate() {
     const active = document.querySelector('.bob-active');
     const content = active.querySelector('.bob-content');
-    const heading = content.querySelector('h2, h3, h4');
 
     window.setTimeout(() => {
       content.classList.add('fade-in');
-      if (heading) {
-        document.title = heading.innerText;
-      } else {
-        // try data-page-title
-        const dataPageTitle = content.querySelector('[data-page-title]');
-        if (dataPageTitle) {
-          document.title = dataPageTitle.getAttribute('data-page-title');
-        }
-      }
     }, 10);
   }
 
