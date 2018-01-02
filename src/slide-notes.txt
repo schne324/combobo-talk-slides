@@ -40,8 +40,14 @@ Gauge audience - designers? developers? how many devs work directly with designe
 Slide 9 - Designer + Developer
 ---------------------------------
 Different kinds of work, same goal.
-Designer - concerned with interactions, visuals, info arhictecture, etc.
-Developer - concered with well-formed code, data architecture, dependencies, etc.
+Designer - concerned with interactions, visuals, info architecture, etc.
+Developer - concerned with well-formed code, data architecture, dependencies, etc.
 Brief example:
   - Harris knows a lot about ARIA, Caitlin doesn't (in part b/c she doesn't code)
   - Caitlin's job to choose colors, generally, so she's in charge of good color contrast
+
+
+Slide 10 - who, where, what, when, why
+------------------------------------------
+Details around what design review is, who attends, why, when, and where it happens
+NOTE: get question mark image to put in background for style and stuff

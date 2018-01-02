@@ -110,6 +110,39 @@ const slides = [
         <h2 className="align-left white-text">Developer</h2>
       </div>
     </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Who</h2>
+      <h2 className="title-centered">Where</h2>
+      <h2 className="title-centered">What</h2>
+      <h2 className="title-centered">When</h2>
+      <h2 className="title-centered">Why</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Design Responsibilities</h2>
+      <ul>
+        <li>Color contrast</li>
+        <li>Visible focus</li>
+        <li>filler</li>
+        <li>filler</li>
+        <li>filler</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Development Responsibilities</h2>
+      <ul>
+        <li>Keyboard</li>
+        <li>ARIA (if applicable)</li>
+        <li>Screen reader compatability</li>
+        <li>filler</li>
+        <li>filler</li>
+      </ul>
+    </div>
   )
 ];
 
