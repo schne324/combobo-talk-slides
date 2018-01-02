@@ -1,0 +1,47 @@
+Slide 3 - What We Do
+------------------------------
+Very brief intro to Deque
+Key point: we build a11y apps, therefore apps must be Accessible
+Also brief: we work on same team (most of the time), and in same office
+
+
+Slide 4 - Today, we're talking about...
+------------------------------------------
+Brief overview of topics
+Using comobobo as a case study to illustrate our points today
+(b/c complex widget, project we both worked on, etc.)
+
+
+Slide 5 - Framing the Problem
+----------------------------------
+Screenshot: previous multiselect control in Assure.
+Key points:
+  - Context: app is for tracking accessibility bugs, part of apps is bug list. Bug list is filterable
+  - Hard to find filter you want when select list is big (i.e. >10 options)
+  - Hard to know what's selected at a glance (esp. when mult. selections per filter)
+
+
+Slide 6 - Framing the Problem: Existing Comboboxes
+--------------------------------------------------------
+Lots of options out there - we looked at a ton.
+Problem for us: no options were completely accessible (or even close)
+  - Visual a11y not great for most
+  - Keyboard a11y: some, not all
+  - Screen reader a11y: almost none
+
+
+Slide 7 - A11y === difficult
+-------------------------------
+Build on previous slide - lots of finicky things to get right with a11y.
+Note: hopefully we're preaching to the choir wrt to collaborating with teammates
+Gauge audience - designers? developers? how many devs work directly with designers and vice versa?
+
+
+Slide 9 - Designer + Developer
+---------------------------------
+Different kinds of work, same goal.
+Designer - concerned with interactions, visuals, info arhictecture, etc.
+Developer - concered with well-formed code, data architecture, dependencies, etc.
+Brief example:
+  - Harris knows a lot about ARIA, Caitlin doesn't (in part b/c she doesn't code)
+  - Caitlin's job to choose colors, generally, so she's in charge of good color contrast
