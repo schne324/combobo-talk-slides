@@ -64,6 +64,7 @@ Key point: lots in a11y can be done before devs are even involved
 
 Slide 12 - Development Responsibilities
 ------------------------------------------
+Key point: main dev responsibility is implementation. Designers who don't do development work may not be aware of implications of designs
 
 
 Slide 13 - Showing selected filters: before
@@ -86,11 +87,11 @@ Too many problems, so scrapped idea
 
 Slide 15 - Showing selected filters: second review
 -------------------------------------------------------
-I went back to drawing board and tried a different pattern - active filter pills in different section
+Caitlin went back to drawing board and tried a different pattern - active filter pills in different section
 Lots of questions came up in design review:
   - Focus order
   - What do pills read to screen readers? (Alt text on icon)
   - What happens to keyboard focus / SR readout when last pill is dismissed?
   - What happens when "clear all" is activated? To focus, etc.
 Worked through a lot of these questions in real time as part of design review.
-I took notes of decisions, then added final decisions as wireframe annotations
+Caitlin took notes of decisions, then added final decisions as wireframe annotations
