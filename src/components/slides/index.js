@@ -10,6 +10,9 @@ import singleExample1 from '../../img/single-select-combobox-example-1.png';
 import singleExample2 from '../../img/single-select-combobox-example-2.png';
 import teamwork from '../../img/teamwork.png';
 import codevdesign from '../../img/code-vs-design.png';
+import question from '../../img/question-mark-background.jpg';
+import filters1 from '../../img/filters-review-1.png';
+import filters2 from '../../img/filters-review-2.png';
 
 // NOTE: for code blocks use --> import Highlight from 'react-highlight';
 
@@ -113,11 +116,14 @@ const slides = [
   ),
   (
     <div>
-      <h2 className="title-centered">Who</h2>
-      <h2 className="title-centered">Where</h2>
+      <div className="background-image img-opacity">
+        <img src={question} alt="" width="600px"/>
+      </div>
       <h2 className="title-centered">What</h2>
-      <h2 className="title-centered">When</h2>
+      <h2 className="title-centered">Who</h2>
       <h2 className="title-centered">Why</h2>
+      <h2 className="title-centered">Where</h2>
+      <h2 className="title-centered">When</h2>
     </div>
   ),
   (
@@ -142,6 +148,30 @@ const slides = [
         <li>filler</li>
         <li>filler</li>
       </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Showing Selected Filters: Before</h2>
+      <div className="full-image">
+        <img src={oldFilters} width="400px" alt="multi-select filters in WorldSpace Assure prior to version 1.4" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Showing Selected Filters: First Review</h2>
+      <div className="full-image">
+        <img src={filters1} width="400px" alt="new multi-select filters showing selected items in a side panel in the widget" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Showing Selected Filters: Second Review</h2>
+      <div className="full-image">
+        <img src={filters2} width="530px" alt="after second review, selected items show beneath filters as separate section" />
+      </div>
     </div>
   )
 ];

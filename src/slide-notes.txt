@@ -49,5 +49,48 @@ Brief example:
 
 Slide 10 - who, where, what, when, why
 ------------------------------------------
-Details around what design review is, who attends, why, when, and where it happens
-NOTE: get question mark image to put in background for style and stuff
+Details around:
+  - what design review is
+  - who attends (or should attend)
+  - why it happens
+  - when it happens (how often)
+  - where it happens
+
+
+Slide 11 - Design Responsibilities
+----------------------------------------
+Key point: lots in a11y can be done before devs are even involved
+
+
+Slide 12 - Development Responsibilities
+------------------------------------------
+
+
+Slide 13 - Showing selected filters: before
+-----------------------------------------------
+Overview of how Assure Classic handled this (i.e. it didn't really)
+Review of problems:
+  - hard to tell when filters active
+  - hard to deselect specific filter (have to find in list)
+
+
+Slide 14 - Showing selected filters: first review
+------------------------------------------------------
+First solution was to show selected panel as part of widget
+Problems: have to expand to see, takes up space.
+Big a11y issues pointed out by devs:
+  - where does it show in reading order? focus order? How do screen readers get to it?
+  - if not focusable, how does it make it easier to deselect?
+Too many problems, so scrapped idea
+
+
+Slide 15 - Showing selected filters: second review
+-------------------------------------------------------
+I went back to drawing board and tried a different pattern - active filter pills in different section
+Lots of questions came up in design review:
+  - Focus order
+  - What do pills read to screen readers? (Alt text on icon)
+  - What happens to keyboard focus / SR readout when last pill is dismissed?
+  - What happens when "clear all" is activated? To focus, etc.
+Worked through a lot of these questions in real time as part of design review.
+I took notes of decisions, then added final decisions as wireframe annotations
