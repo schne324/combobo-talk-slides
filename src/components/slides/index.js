@@ -221,7 +221,7 @@ const slides = [
   ),
   (
     <div>
-      <h2>Annotating Accessibility</h2>
+      <h2>Annotating Accessibility Features</h2>
       <strong>Questions to ask:</strong>
       <ul>
         <li>Heading level?</li>
