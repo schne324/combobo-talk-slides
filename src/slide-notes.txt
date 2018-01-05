@@ -95,3 +95,45 @@ Lots of questions came up in design review:
   - What happens when "clear all" is activated? To focus, etc.
 Worked through a lot of these questions in real time as part of design review.
 Caitlin took notes of decisions, then added final decisions as wireframe annotations
+
+
+Slide 16 - Design Annotations
+--------------------------------
+Segue from previous: hard to communicate everything in a picture
+
+
+Slide 18 - Example without Annotations
+-----------------------------------------
+Picture communications a lot: placement of elements, styles, etc.
+But only shows one state. There are hidden details
+
+
+Slide 19 - Example with annotations
+---------------------------------------
+All annotations affect accessibility. Know what to note by asking questions:
+- What happens to focus when state changes?
+- What needs alt text?
+- What kind of element should it be coded as?
+
+
+Slide 20 - Annotations === documentation
+-------------------------------------------
+Annotations - only one form of documentation.
+Multiple purposes:
+- Devs know what to develop (main)
+- QA knows what to test
+- Record of decisions made (in case have to go back to it later)
+- Other team members can get up to speed
+
+
+Slide 21 - Annotations Locations
+--------------------------------------
+Key: make sure they exist where other people can see them.
+What we do: annotations on design comps, comps attached to Jira tickets, additional annotations as Jira comments or descriptions
+
+
+Slide 22 - Annotating accessibility features
+------------------------------------------------
+Annotations should be answers to questions about the gaps in the design.
+For a11y, think about how designs will be represented in code.
+Good code = good a11y

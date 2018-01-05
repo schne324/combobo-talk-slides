@@ -13,6 +13,7 @@ import codevdesign from '../../img/code-vs-design.png';
 import question from '../../img/question-mark-background.jpg';
 import filters1 from '../../img/filters-review-1.png';
 import filters2 from '../../img/filters-review-2.png';
+import filters2annot from '../../img/filters-review-2-annotated.png';
 
 // NOTE: for code blocks use --> import Highlight from 'react-highlight';
 
@@ -132,9 +133,10 @@ const slides = [
       <ul>
         <li>Color contrast</li>
         <li>Visible focus</li>
-        <li>filler</li>
-        <li>filler</li>
-        <li>filler</li>
+        <li>Visual page structure</li>
+        <li>Images and alternative text</li>
+        <li>Navigation and consistency</li>
+        <li>Etc.</li>
       </ul>
     </div>
   ),
@@ -142,11 +144,11 @@ const slides = [
     <div>
       <h2 className="title-centered">Development Responsibilities</h2>
       <ul>
-        <li>Keyboard</li>
+        <li>Semantic code</li>
+        <li>Keyboard operability</li>
         <li>ARIA (if applicable)</li>
         <li>Screen reader compatability</li>
-        <li>filler</li>
-        <li>filler</li>
+        <li>Etc.</li>
       </ul>
     </div>
   ),
@@ -172,6 +174,63 @@ const slides = [
       <div className="full-image">
         <img src={filters2} width="530px" alt="after second review, selected items show beneath filters as separate section" />
       </div>
+    </div>
+  ),
+  (
+    <div>
+      <h1 className="title-centered">Design Annotations</h1>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Annotations allow designers to communicate design details to other team members.</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h3 className="title-offscreen">Design example without annotations</h3>
+      <div className="full-image">
+        <img src={filters2} width="530px" alt="flat design of multi-select filters and pills without annotations" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h3 className="title-offscreen">Design example with annotations</h3>
+      <div className="full-image">
+        <img src={filters2annot} width="530px" alt="same wireframes as previous slide with annotations" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Annotations === Documentation</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Annotation Locations</h2>
+      <ul>
+        <li>Part of design comps</li>
+        <li>Requirements documents</li>
+        <li>Stories (i.e. Jira tickets)</li>
+        <li>Whiteboards</li>
+        <li>Email / Slack</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Annotating Accessibility</h2>
+      <strong>Questions to ask:</strong>
+      <ul>
+        <li>Heading level?</li>
+        <li>Which HTML element to use?</li>
+        <li>What&#39;s the alt text?</li>
+        <li>Reading order?</li>
+        <li>Focus order?</li>
+        <li>What happens when...?</li>
+      </ul>
     </div>
   )
 ];
