@@ -9,7 +9,7 @@ let xDown, yDown;
 class Slideshow extends Component {
   constructor(props) {
     super(props);
-    let hash = location.hash;
+    let hash = window.location.hash;
     hash = hash && hash.substring(1, hash.length);
 
     this.state = {
@@ -48,7 +48,7 @@ class Slideshow extends Component {
   }
 
   hash(idx) {
-    location.hash = idx + 1;
+    window.location.hash = idx + 1;
   }
 
   slideNavigation(dir) {
