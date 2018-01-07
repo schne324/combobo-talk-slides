@@ -15,7 +15,7 @@ export default class Slide extends Component {
     const { slideIndex, activeIndex, title } = this.props;
 
     if (slideIndex === activeIndex && this.el) {
-      document.title = title || queryAll('h1, h2', this.el).map(el => el.innerText).join(' ');
+      document.title = title || queryAll('h1, h2, h3', this.el).map(el => el.innerText).join(' ');
     }
   }
 

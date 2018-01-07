@@ -1,4 +1,5 @@
 import React from 'react';
+import Highlight from 'react-highlight';
 // images
 import logo from '../../img/deque-logo-white.png';
 import caitlin from '../../img/caitlin.jpg';
@@ -10,8 +11,11 @@ import singleExample1 from '../../img/single-select-combobox-example-1.png';
 import singleExample2 from '../../img/single-select-combobox-example-2.png';
 import teamwork from '../../img/teamwork.png';
 import codevdesign from '../../img/code-vs-design.png';
+import question from '../../img/question-mark-background.jpg';
+import filters1 from '../../img/filters-review-1.png';
+import filters2 from '../../img/filters-review-2.png';
+import filters2annot from '../../img/filters-review-2-annotated.png';
 
-// NOTE: for code blocks use --> import Highlight from 'react-highlight';
 
 const slides = [
   // title slide
@@ -113,8 +117,124 @@ const slides = [
   ),
   (
     <div>
-      <h1>Prototyping</h1>
+      <div className="background-image img-opacity">
+        <img src={question} alt="" width="600px"/>
+      </div>
+      <h2 className="title-centered">What</h2>
+      <h2 className="title-centered">Who</h2>
+      <h2 className="title-centered">Why</h2>
+      <h2 className="title-centered">Where</h2>
+      <h2 className="title-centered">When</h2>
     </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Design Responsibilities</h2>
+      <ul>
+        <li>Color contrast</li>
+        <li>Visible focus</li>
+        <li>Visual page structure</li>
+        <li>Images and alternative text</li>
+        <li>Navigation and consistency</li>
+        <li>Etc.</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Development Responsibilities</h2>
+      <ul>
+        <li>Semantic code</li>
+        <li>Keyboard operability</li>
+        <li>ARIA (if applicable)</li>
+        <li>Screen reader compatability</li>
+        <li>Etc.</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Showing Selected Filters: Before</h2>
+      <div className="full-image">
+        <img src={oldFilters} width="400px" alt="multi-select filters in WorldSpace Assure prior to version 1.4" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Showing Selected Filters: First Review</h2>
+      <div className="full-image">
+        <img src={filters1} width="400px" alt="new multi-select filters showing selected items in a side panel in the widget" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Showing Selected Filters: Second Review</h2>
+      <div className="full-image">
+        <img src={filters2} width="530px" alt="after second review, selected items show beneath filters as separate section" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h1 className="title-centered">Design Annotations</h1>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Annotations allow designers to communicate design details to other team members.</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h3 className="title-offscreen">Design example without annotations</h3>
+      <div className="full-image">
+        <img src={filters2} width="530px" alt="flat design of multi-select filters and pills without annotations" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h3 className="title-offscreen">Design example with annotations</h3>
+      <div className="full-image">
+        <img src={filters2annot} width="530px" alt="same wireframes as previous slide with annotations" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Annotations === Documentation</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Annotation Locations</h2>
+      <ul>
+        <li>Part of design comps</li>
+        <li>Requirements documents</li>
+        <li>Stories (i.e. Jira tickets)</li>
+        <li>Whiteboards</li>
+        <li>Email / Slack</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Annotating Accessibility Features</h2>
+      <strong>Questions to ask:</strong>
+      <ul>
+        <li>Heading level?</li>
+        <li>Which HTML element to use?</li>
+        <li>What&#39;s the alt text?</li>
+        <li>Reading order?</li>
+        <li>Focus order?</li>
+        <li>What happens when...?</li>
+      </ul>
+    </div>
+  ),
+  (
+    <h1>Prototyping</h1>
   ),
   (
     <div>
@@ -127,8 +247,72 @@ const slides = [
     </div>
   ),
   (
+    <h2>Interactive Prototype Case Study: Combobo</h2>
+  ),
+  (
     <div>
-      <h1>Interactive Prototype Case Study: Combobo</h1>
+      <h3>Combobo</h3>
+      <p>An open source modular / accessible combobox plugin written by yours truly</p>
+    </div>
+  ),
+  (
+    <div>
+      <h3 className='title-offscreen'>Example combobo instantiation</h3>
+      <Highlight className='js'>
+        {
+          `
+const combobo = new Combobo({
+  input: '.combobox',
+  list: '.listbox',
+  options: '.option', // qualified within list
+  groups: null, // qualified within list
+  openClass: 'open',
+  activeClass: 'active',
+  selectedClass: 'selected',
+  useLiveRegion: true,
+  multiselect: false,
+  noResultsText: null,
+  selectionValue: (selecteds) => selecteds.map((s) => s.innerText.trim()).join(' - '),
+  optionValue: 'underline', // wrap the matched portion of the option (if applicable) in a span with class "underline"
+  announcement: {
+    count: (n) => n + ' options available',
+    selected: 'Selected.'
+  },
+  filter: 'contains' // 'starts-with', 'equals', or funk
+});
+          `
+        }
+      </Highlight>
+    </div>
+  ),
+  (
+    <div>
+      <h3 className='title-offscreen'>Combobo events / methods (code sample)</h3>
+      <Highlight className='js'>
+        {
+          `
+combobo
+  .on('change', function () {
+    console.log('stuff has changed and stuff');
+  })
+  .on('selection', function () {
+    console.log('selection made!');
+  })
+  .goTo(combobo.getOptIndex() + 5) // move 5 options forward
+  .select(); // select that option
+          `
+        }
+      </Highlight>
+    </div>
+  ),
+  (
+    <div>
+      <h3>The value in the interactive prototype Combobo</h3>
+      <ul>
+        <li>Allow for screen reader testing very early in the process</li>
+        <li>{'Made us ask questions we hadn\'t asked before'}</li>
+        <li>{'Allowed for enhancements to be made without changing our app\'s code'}</li>
+      </ul>
     </div>
   )
 ];

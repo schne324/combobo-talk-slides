@@ -65,6 +65,11 @@ body {
   left: 0;
 }
 
+.img-opacity {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
 /* so that every slide has a high-level heading */
 .title-offscreen {
   position: absolute;

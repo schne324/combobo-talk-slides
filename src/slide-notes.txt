@@ -1,0 +1,139 @@
+Slide 3 - What We Do
+------------------------------
+Very brief intro to Deque
+Key point: we build a11y apps, therefore apps must be Accessible
+Also brief: we work on same team (most of the time), and in same office
+
+
+Slide 4 - Today, we're talking about...
+------------------------------------------
+Brief overview of topics
+Using comobobo as a case study to illustrate our points today
+(b/c complex widget, project we both worked on, etc.)
+
+
+Slide 5 - Framing the Problem
+----------------------------------
+Screenshot: previous multiselect control in Assure.
+Key points:
+  - Context: app is for tracking accessibility bugs, part of apps is bug list. Bug list is filterable
+  - Hard to find filter you want when select list is big (i.e. >10 options)
+  - Hard to know what's selected at a glance (esp. when mult. selections per filter)
+
+
+Slide 6 - Framing the Problem: Existing Comboboxes
+--------------------------------------------------------
+Lots of options out there - we looked at a ton.
+Problem for us: no options were completely accessible (or even close)
+  - Visual a11y not great for most
+  - Keyboard a11y: some, not all
+  - Screen reader a11y: almost none
+
+
+Slide 7 - A11y === difficult
+-------------------------------
+Build on previous slide - lots of finicky things to get right with a11y.
+Note: hopefully we're preaching to the choir wrt to collaborating with teammates
+Gauge audience - designers? developers? how many devs work directly with designers and vice versa?
+
+
+Slide 9 - Designer + Developer
+---------------------------------
+Different kinds of work, same goal.
+Designer - concerned with interactions, visuals, info architecture, etc.
+Developer - concerned with well-formed code, data architecture, dependencies, etc.
+Brief example:
+  - Harris knows a lot about ARIA, Caitlin doesn't (in part b/c she doesn't code)
+  - Caitlin's job to choose colors, generally, so she's in charge of good color contrast
+
+
+Slide 10 - who, where, what, when, why
+------------------------------------------
+Details around:
+  - what design review is
+  - who attends (or should attend)
+  - why it happens
+  - when it happens (how often)
+  - where it happens
+
+
+Slide 11 - Design Responsibilities
+----------------------------------------
+Key point: lots in a11y can be done before devs are even involved
+
+
+Slide 12 - Development Responsibilities
+------------------------------------------
+Key point: main dev responsibility is implementation. Designers who don't do development work may not be aware of implications of designs
+
+
+Slide 13 - Showing selected filters: before
+-----------------------------------------------
+Overview of how Assure Classic handled this (i.e. it didn't really)
+Review of problems:
+  - hard to tell when filters active
+  - hard to deselect specific filter (have to find in list)
+
+
+Slide 14 - Showing selected filters: first review
+------------------------------------------------------
+First solution was to show selected panel as part of widget
+Problems: have to expand to see, takes up space.
+Big a11y issues pointed out by devs:
+  - where does it show in reading order? focus order? How do screen readers get to it?
+  - if not focusable, how does it make it easier to deselect?
+Too many problems, so scrapped idea
+
+
+Slide 15 - Showing selected filters: second review
+-------------------------------------------------------
+Caitlin went back to drawing board and tried a different pattern - active filter pills in different section
+Lots of questions came up in design review:
+  - Focus order
+  - What do pills read to screen readers? (Alt text on icon)
+  - What happens to keyboard focus / SR readout when last pill is dismissed?
+  - What happens when "clear all" is activated? To focus, etc.
+Worked through a lot of these questions in real time as part of design review.
+Caitlin took notes of decisions, then added final decisions as wireframe annotations
+
+
+Slide 16 - Design Annotations
+--------------------------------
+Segue from previous: hard to communicate everything in a picture
+
+
+Slide 18 - Example without Annotations
+-----------------------------------------
+Picture communications a lot: placement of elements, styles, etc.
+But only shows one state. There are hidden details
+
+
+Slide 19 - Example with annotations
+---------------------------------------
+All annotations affect accessibility. Know what to note by asking questions:
+- What happens to focus when state changes?
+- What needs alt text?
+- What kind of element should it be coded as?
+
+
+Slide 20 - Annotations === documentation
+-------------------------------------------
+Annotations - only one form of documentation.
+Multiple purposes:
+- Devs know what to develop (main)
+- QA knows what to test
+- Record of decisions made (in case have to go back to it later)
+- Other team members can get up to speed
+
+
+Slide 21 - Annotations Locations
+--------------------------------------
+Key: make sure they exist where other people can see them.
+What we do: annotations on design comps, comps attached to Jira tickets, additional annotations as Jira comments or descriptions
+
+
+Slide 22 - Annotating accessibility features
+------------------------------------------------
+Annotations should be answers to questions about the gaps in the design.
+For a11y, think about how designs will be represented in code.
+Good code = good a11y
