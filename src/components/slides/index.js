@@ -1,5 +1,6 @@
 import React from 'react';
 import Highlight from 'react-highlight';
+import ComboboDemo from './ComboboDemo';
 // images
 import logo from '../../img/deque-logo-white.png';
 import caitlin from '../../img/caitlin.jpg';
@@ -314,6 +315,9 @@ combobo
         <li>{'Allowed for enhancements to be made without changing our app\'s code'}</li>
       </ul>
     </div>
+  ),
+  (
+    <ComboboDemo />
   )
 ];
 

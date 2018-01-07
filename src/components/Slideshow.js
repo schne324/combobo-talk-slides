@@ -64,8 +64,8 @@ class Slideshow extends Component {
   }
 
   handleKeydown(e) {
-    const which = e.which;
-    if (which < 37 || which > 40) { return; }
+    const { which, target } = e;
+    if (which < 37 || which > 40 || target.tagName === 'INPUT') { return; }
     this.slideNavigation(nexts.indexOf(which) > -1 ? 'next' : 'prev');
   }
 
