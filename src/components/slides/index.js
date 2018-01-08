@@ -16,6 +16,7 @@ import question from '../../img/question-mark-background.jpg';
 import filters1 from '../../img/filters-review-1.png';
 import filters2 from '../../img/filters-review-2.png';
 import filters2annot from '../../img/filters-review-2-annotated.png';
+import complexity from '../../img/complexity-and-usability-testing.png';
 
 
 const slides = [
@@ -28,7 +29,7 @@ const slides = [
       <h1 className="title-slide">Designers and Developers Working Together - Mass Hysteria!</h1>
       <h2>(And Accessible Websites!)</h2>
       <div className='by-who'>
-        &nbsp;
+        nbsp;
         <p>Caitlin Geier and Harris Schneiderman</p>
         <p className="offscreen">Use arrow keys to navigate through slides</p>
       </div>
@@ -53,7 +54,7 @@ const slides = [
     <div>
       <h2 className="large">What We Do</h2>
       <h3>We work for <strong>Deque Systems</strong>.</h3>
-      &nbsp;
+      nbsp;
       <p>We design and build <strong>web applications</strong> to help <strong>development teams</strong> perform <strong>accessibility testing</strong>.</p>
     </div>
   ),
@@ -318,6 +319,36 @@ combobo
   ),
   (
     <ComboboDemo />
+  ),
+  (
+    <div>
+      <h1>Usability Testing</h1>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-offscreen">More complex interactions === more important to do usability testing</h2>
+      <div className="full-image">
+        <img src={complexity} width="530px" alt="" />
+      </div>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Targeted Usability Testing</h2>
+      <p>(for when you don&#39;t have time to test All The Things)</p>
+      <ul>
+        <li>Complex interactions</li>
+        <li>Unique interactions and new patterns</li>
+        <li>Use cases you aren&#39;t sure about</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Want to test with screen reader users?<br/><br/>
+      Code your prototype.</h2>
+    </div>
   )
 ];
 

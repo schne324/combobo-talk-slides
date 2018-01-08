@@ -138,31 +138,56 @@ Annotations should be answers to questions about the gaps in the design.
 For a11y, think about how designs will be represented in code.
 Good code = good a11y
 
+
 Slide 23 - Prototyping
 ------------------------------
 Title slide - we use many different types of prototyping at various stages of software development
 
+
 Slide 24 - Types of prototypes
 -----------------------------------
 key: all are useful for different things
+
 
 Slide 25 - Interactive Prototype Case Study: Combobo
 ------------------------------------------------------
 No that's not a typo, we named our module "Combobo"...
 key: we decided it would be extremely beneficial to use an interactive prototype
 
+
 Slide 26 - Combobo
 ----------------------
 key: its open source, it's awesome, and it sped up the development process
+
 
 Slide 27 - Example combobo instantiation
 --------------------------------------------
 key: there are TONS of configuration options which makes it super flexible
 
-Slide 27 - Combobo events / methods (code sample)
+
+Slide 28 - Combobo events / methods (code sample)
 ----------------------------------------------------
 key: exposing public methods and events makes integrating combobo into your app easy!
 
-Slide 28 - Combobo Demo
+
+Slide 30 - Combobo Demo
 ----------------------------
 key: turn VO on to show off some awesome a11y features!
+
+
+Slide 31 - Usability Testing
+--------------------------------
+Segue: the awesome thing about making a coded prototype is we could do usability testing on it
+
+
+Slide 33 - Targeted usability testing
+-------------------------------------------
+Usability testing = lots of time + money. Got to pick and choose what to test.
+Test the things that have the highest "unknown" quotient
+Especially the things where you can't even guess at the answers
+
+
+Slide 34 - Want to test with SR users? Code your prototype
+-------------------------------------------------------------
+SRs work on top of code - therefore, can't really test without the code.
+Means investing in accessibility early - in prototyping phase! Makes it WAY easier later
