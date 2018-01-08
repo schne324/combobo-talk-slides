@@ -8,3 +8,7 @@ $ cd combobo-talk-slides
 $ npm install
 $ npm start
 ```
+
+
+## TODO
+- Get the cool ascii combobo gorilla somewhere in the mix ~slide 26ish

@@ -243,8 +243,8 @@ const slides = [
       <h2>Types of prototypes</h2>
       <ul>
         <li><strong>Low fidelity</strong> for testing layout, content, etc.</li>
-        <li><strong>Higher fidelity</strong> for testing with keyboard / AT users</li>
-        <li><strong>Interactive</strong> for testing...interactions</li>
+        <li><strong>Higher fidelity</strong> for testing interactions</li>
+        <li><strong>Coded</strong> for testing with keyboard / AT users</li>
       </ul>
     </div>
   ),
@@ -286,6 +286,14 @@ const combobo = new Combobo({
         }
       </Highlight>
     </div>
+  ),
+  (
+    <h3><Highlight className='js'>{'{ useLiveRegion: true }'}</Highlight></h3>
+  ),
+  (
+    <h3>
+      <Highlight className='js'>{'{ activeClass: "active", selectedClass: "selected" }'}</Highlight>
+    </h3>
   ),
   (
     <div>
