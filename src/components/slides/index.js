@@ -17,6 +17,7 @@ import filters1 from '../../img/filters-review-1.png';
 import filters2 from '../../img/filters-review-2.png';
 import filters2annot from '../../img/filters-review-2-annotated.png';
 import complexity from '../../img/complexity-and-usability-testing.png';
+import focus from '../../img/focus-styles.png';
 
 
 const slides = [
@@ -287,12 +288,17 @@ const combobo = new Combobo({
     </div>
   ),
   (
-    <h3><Highlight className='js'>{'{ useLiveRegion: true }'}</Highlight></h3>
+    <div>
+      <h3><Highlight className='js'>{'{ useLiveRegion: true }'}</Highlight></h3>
+    </div>
   ),
   (
-    <h3>
-      <Highlight className='js'>{'{ activeClass: "active", selectedClass: "selected" }'}</Highlight>
-    </h3>
+    <div>
+      <h3>
+        <Highlight className='js'>{'{ activeClass: "active", selectedClass: "selected" }'}</Highlight>
+      </h3>
+      <img src={focus} width="450px" alt="focus styles for active, selected, and active and selected for both combobo and worldspace assure" />
+    </div>
   ),
   (
     <div>
@@ -363,8 +369,16 @@ combobo
       <ul>
         <li>4 internal users</li>
         <li>2 screen reader users</li>
-        <li>Accessibility experts</li>
+        <li>Collaboratively!</li>
       </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h1 className="title-centered">"Agile Accessibility" - Dylan Barrell</h1>
+      <p className="title-centered">Deque Systems sponsor talk</p>
+      <br />
+      <p className="title-centered"><strong>2:15 PM Thursday</strong> (today!) in <strong>Room: Nile</strong></p>
     </div>
   ),
   (

@@ -174,42 +174,48 @@ key: we performed a TON of AT/browser tests, due to inconsistent results we defa
 
 Slide 29 - { activeClass: "active", selectedClass: "selected" } (Caitlin)
 ---------------------------------------------------------------------------
-key: TODO - caitlin write stuff here
+Didn't think about this when designing - Harris brought it up later. We whiteboarded solution ideas and then decided on route.
+Had to do different focus styles for product than for open source version, b/c product had existing focus styles (outline)
 
 
-Slide 30 - Combobo events / methods (code sample)
-----------------------------------------------------
+Slide 30 - Combobo events / methods (code sample) (Harris)
+-------------------------------------------------------------
 key: exposing public methods and events makes integrating combobo into your app easy!
 
 
-Slide 32 - Combobo Demo
+Slide 32 - Combobo Demo (Harris)
 ----------------------------
 key: turn VO on to show off some awesome a11y features!
 
 
-Slide 33 - Usability Testing
---------------------------------
+Slide 33 - Usability Testing (Caitlin)
+-----------------------------------------
 Segue: the awesome thing about making a coded prototype is we could do usability testing on it
 
 
-Slide 35 - Targeted usability testing
--------------------------------------------
+Slide 35 - Targeted usability testing (Caitlin)
+-------------------------------------------------------
 Usability testing = lots of time + money. Got to pick and choose what to test.
 Test the things that have the highest "unknown" quotient
 Especially the things where you can't even guess at the answers
 
 
-Slide 36 - Want to test with SR users? Code your prototype
--------------------------------------------------------------
+Slide 36 - Want to test with SR users? Code your prototype (Caitlin / Harris)
+-------------------------------------------------------------------------------
 SRs work on top of code - therefore, can't really test without the code.
 Means investing in accessibility early - in prototyping phase! Makes it WAY easier later
 
 
-Slide 37 - How we tested Combobo
+Slide 37 - How we tested Combobo (Caitlin)
 --------------------------------------------
 Recruited internally b/c we knew we could get SR users AND a11y experts that way (cheating)
 Tested w/in context of application, not prototypes
 Targeted specific questions we had, like user expectations about tabbing back into the text field
+Wasn't just UX running show - Harris attended, too
+
+
+Second to last slide - plugging Dylan's talk
+----------------------------------------------
 
 
 Last slide - Thanks!
