@@ -35,6 +35,24 @@ body {
   min-width: 200px;
 }
 
+.contact-cards {
+  width: 400px;
+  display: block;
+  float: left;
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+
+.contact-cards img {
+  float: left;
+}
+
+.contact-text {
+  display: block;
+  float: left;
+  padding: 15px 0 0 20px;
+}
+
 .align-right {
   text-align: right;
   padding-right: 50px;

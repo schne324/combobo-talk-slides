@@ -192,14 +192,27 @@ Slide 33 - Usability Testing
 Segue: the awesome thing about making a coded prototype is we could do usability testing on it
 
 
-Slide 34 - Targeted usability testing
+Slide 35 - Targeted usability testing
 -------------------------------------------
 Usability testing = lots of time + money. Got to pick and choose what to test.
 Test the things that have the highest "unknown" quotient
 Especially the things where you can't even guess at the answers
 
 
-Slide 35 - Want to test with SR users? Code your prototype
+Slide 36 - Want to test with SR users? Code your prototype
 -------------------------------------------------------------
 SRs work on top of code - therefore, can't really test without the code.
 Means investing in accessibility early - in prototyping phase! Makes it WAY easier later
+
+
+Slide 37 - How we tested Combobo
+--------------------------------------------
+Recruited internally b/c we knew we could get SR users AND a11y experts that way (cheating)
+Tested w/in context of application, not prototypes
+Targeted specific questions we had, like user expectations about tabbing back into the text field
+
+
+Last slide - Thanks!
+-----------------------
+Contact info and stuff.
+Also remind everyone to fill out session evaluations (in the AttendeeHub app)

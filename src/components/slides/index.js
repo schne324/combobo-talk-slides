@@ -29,7 +29,7 @@ const slides = [
       <h1 className="title-slide">Designers and Developers Working Together - Mass Hysteria!</h1>
       <h2>(And Accessible Websites!)</h2>
       <div className='by-who'>
-        nbsp;
+        <br/>
         <p>Caitlin Geier and Harris Schneiderman</p>
         <p className="offscreen">Use arrow keys to navigate through slides</p>
       </div>
@@ -54,7 +54,7 @@ const slides = [
     <div>
       <h2 className="large">What We Do</h2>
       <h3>We work for <strong>Deque Systems</strong>.</h3>
-      nbsp;
+      <br/>
       <p>We design and build <strong>web applications</strong> to help <strong>development teams</strong> perform <strong>accessibility testing</strong>.</p>
     </div>
   ),
@@ -64,8 +64,7 @@ const slides = [
       <ul>
         <li>Collaboration</li>
         <li>Comboboxes</li>
-        <li>Accessibility</li>
-        <li>How it can All Go Wrong</li>
+        <li>Being Awesomely Accessible</li>
       </ul>
     </div>
   ),
@@ -337,18 +336,18 @@ combobo
     <div>
       <h2 className="title-offscreen">More complex interactions === more important to do usability testing</h2>
       <div className="full-image">
-        <img src={complexity} width="530px" alt="" />
+        <img src={complexity} width="430px" alt="" />
       </div>
     </div>
   ),
   (
     <div>
       <h2>Targeted Usability Testing</h2>
-      <p>(for when you don&#39;t have time to test All The Things)</p>
+      <p>{'(for when you don\'t have time to test All The Things)'}</p>
       <ul>
         <li>Complex interactions</li>
         <li>Unique interactions and new patterns</li>
-        <li>Use cases you aren&#39;t sure about</li>
+        <li>{'Use cases you aren\'t sure about'}</li>
       </ul>
     </div>
   ),
@@ -356,6 +355,37 @@ combobo
     <div>
       <h2 className="title-centered">Want to test with screen reader users?<br/><br/>
       Code your prototype.</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h2>How we tested Combobo</h2>
+      <ul>
+        <li>4 internal users</li>
+        <li>2 screen reader users</li>
+        <li>Accessibility experts</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h1 className="title-centered">Thanks!</h1>
+      <div className="contact-cards">
+        <img src={caitlin} width="100px" alt=""/>
+        <div className="contact-text">
+          <strong>Caitlin Geier</strong>
+          <p>caitlin.geier@deque.com</p>
+          <a href="https://twitter.com/CaitlinGeier">@CaitlinGeier</a>
+        </div>
+      </div>
+      <div className="contact-cards">
+        <img src={harris} width="100px" alt=""/>
+        <div className="contact-text">
+          <strong>Harris Schneiderman</strong>
+          <p>harris.schneiderman@deque.com</p>
+          <a href="https://twitter.com/theHarrisius">@theHarrisius</a>
+        </div>
+      </div>
     </div>
   )
 ];
