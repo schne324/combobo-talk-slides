@@ -212,6 +212,18 @@ Tested w/in context of application, not prototypes
 Targeted specific questions we had, like user expectations about tabbing back into the text field
 
 
+Slide 41 - Benefits of pattern libraries
+-------------------------------------------------
+key: pattern libraries are awesome - they have TONS of benefits
+
+Slide 42 - Why isn't Combobo in the pattern library?
+------------------------------------------------------------
+- the first app that consumed it is older than the pattern library and has not adopted the pattern library yet
+- the apple rule (of 3):
+  1st: build it
+  2nd: improve it
+  3rd: add is as a reusable component to the pattern library
+
 Last slide - Thanks!
 -----------------------
 Contact info and stuff.
