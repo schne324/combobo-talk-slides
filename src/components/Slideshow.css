@@ -3,6 +3,11 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
+.dqpl, .combobo-logo {
+  margin: 0 auto;
+  display: block;
+}
+
 .slideshow-bob-container {
   display: flex;
   justify-content: center;
