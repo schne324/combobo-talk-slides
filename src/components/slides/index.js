@@ -17,14 +17,10 @@ import filters1 from '../../img/filters-review-1.png';
 import filters2 from '../../img/filters-review-2.png';
 import filters2annot from '../../img/filters-review-2-annotated.png';
 import complexity from '../../img/complexity-and-usability-testing.png';
-<<<<<<< HEAD
-import focus from '../../img/focus-styles.png';
-
-=======
 import cauldronLogo from '../../img/cauldron.png';
 import dqplCombobox from '../../img/dqpl-combo.png';
 import comboboLogo from '../../img/combobo-logo.png';
->>>>>>> 3a6cbe131ac9d640b540d63b55fbad2d407559af
+import focus from '../../img/focus-styles.png';
 
 const slides = [
   // title slide
@@ -382,12 +378,6 @@ combobo
   ),
   (
     <div>
-<<<<<<< HEAD
-      <h1 className="title-centered">"Agile Accessibility" - Dylan Barrell</h1>
-      <p className="title-centered">Deque Systems sponsor talk</p>
-      <br />
-      <p className="title-centered"><strong>2:15 PM Thursday</strong> (today!) in <strong>Room: Nile</strong></p>
-=======
       <h2>Did we mention Combobo is open source?</h2>
       <p>
         <span>{'Try it out: '}</span>
@@ -446,7 +436,23 @@ combobo
         </a>
       </div>
       <p>{'It\'s open source and accessible!'}</p>
->>>>>>> 3a6cbe131ac9d640b540d63b55fbad2d407559af
+    </div>
+  ),
+  (
+    <div>
+      <h2 className="title-centered">Design Reviews</h2>
+      <h2 className="title-centered">Design Annotations</h2>
+      <h2 className="title-centered">Prototyping</h2>
+      <h2 className="title-centered">Usability Testing</h2>
+      <h2 className="title-centered">Pattern Libraries</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h1 className="title-centered">"Agile Accessibility" - Dylan Barrell</h1>
+      <p className="title-centered">Deque Systems sponsor talk</p>
+      <br />
+      <p className="title-centered"><strong>2:15 PM Thursday</strong> (today!) in <strong>Room: Nile</strong></p>
     </div>
   ),
   (
