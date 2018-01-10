@@ -17,8 +17,14 @@ import filters1 from '../../img/filters-review-1.png';
 import filters2 from '../../img/filters-review-2.png';
 import filters2annot from '../../img/filters-review-2-annotated.png';
 import complexity from '../../img/complexity-and-usability-testing.png';
+<<<<<<< HEAD
 import focus from '../../img/focus-styles.png';
 
+=======
+import cauldronLogo from '../../img/cauldron.png';
+import dqplCombobox from '../../img/dqpl-combo.png';
+import comboboLogo from '../../img/combobo-logo.png';
+>>>>>>> 3a6cbe131ac9d640b540d63b55fbad2d407559af
 
 const slides = [
   // title slide
@@ -40,12 +46,12 @@ const slides = [
     <div>
       <h2 className="title-offscreen">Who we are</h2>
       <div className="two-col profile">
-        <img src={harris} alt="" />
+        <img src={harris} alt="" role='presentation' />
         <h3>Harris Schneiderman</h3>
         <p>Developer</p>
       </div>
       <div className="two-col profile">
-        <img src={caitlin} alt="" />
+        <img src={caitlin} alt="" role='presentation' />
         <h3>Caitlin Geier</h3>
         <p>UX Designer</p>
       </div>
@@ -95,7 +101,7 @@ const slides = [
       <h2 className="title-centered large">Accessibility === difficult</h2>
       <h3 className="title-centered image-space">Working with teammates === less difficult</h3>
       <div className="full-image">
-        <img className="bottom-aligned-image" src={teamwork} width="500px" alt="" />
+        <img className="bottom-aligned-image" src={teamwork} width="500px" alt="" role='presentation' />
       </div>
     </div>
   ),
@@ -107,7 +113,7 @@ const slides = [
   (
     <div>
       <div className="background-image">
-        <img src={codevdesign} alt="" width="600px"/>
+        <img src={codevdesign} alt="" role='presentation' width="600px"/>
       </div>
       <div className="two-col">
         <h2 className="align-right">Designer</h2>
@@ -120,7 +126,7 @@ const slides = [
   (
     <div>
       <div className="background-image img-opacity">
-        <img src={question} alt="" width="600px"/>
+        <img src={question} alt="" role='presentation' width="600px"/>
       </div>
       <h2 className="title-centered">What</h2>
       <h2 className="title-centered">Who</h2>
@@ -255,6 +261,7 @@ const slides = [
     <div>
       <h3>Combobo</h3>
       <p>An open source modular / accessible combobox plugin written by yours truly</p>
+      <img className='combobo-logo' src={comboboLogo} width='150px' alt='' role='presentation' />
     </div>
   ),
   (
@@ -342,7 +349,7 @@ combobo
     <div>
       <h2 className="title-offscreen">More complex interactions === more important to do usability testing</h2>
       <div className="full-image">
-        <img src={complexity} width="430px" alt="" />
+        <img src={complexity} width="430px" alt="" role='presentation' />
       </div>
     </div>
   ),
@@ -375,17 +382,78 @@ combobo
   ),
   (
     <div>
+<<<<<<< HEAD
       <h1 className="title-centered">"Agile Accessibility" - Dylan Barrell</h1>
       <p className="title-centered">Deque Systems sponsor talk</p>
       <br />
       <p className="title-centered"><strong>2:15 PM Thursday</strong> (today!) in <strong>Room: Nile</strong></p>
+=======
+      <h2>Did we mention Combobo is open source?</h2>
+      <p>
+        <span>{'Try it out: '}</span>
+        <a href='https://schne324.github.io/combobo/demo/' target='_blank'>
+          {'interactive demo'}
+        </a>
+      </p>
+      <p><a href='https://github.com/schne324/combobo' target='_blank'>Combobo on GitHub</a></p>
+    </div>
+  ),
+  (
+    <div>
+      <h1>{'We\'ve built something solid'}</h1>
+      <h2>...how can we preserve this?</h2>
+    </div>
+  ),
+  (
+    <h2>Pattern libraries FTW!</h2>
+  ),
+  (
+    <div>
+      <h2>Benefits of pattern libraries</h2>
+      <ul>
+        <li>DRY</li>
+        <li>Great for accessibility</li>
+        <li>Consistent look/feel</li>
+        <li>Write less CSS and focus on functionality of app</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <h2>{'Why isn\'t Combobo in the pattern library?'}</h2>
+      <p>The apple rule...</p>
+    </div>
+  ),
+  (
+    <div>
+      <h2>Will it be hard to add to it to the pattern library?</h2>
+      <p>Thanks to Combobo and existing designs, this will be easy!</p>
+    </div>
+  ),
+  (
+    <div>
+      <h2 className='title-offscreen'>Pattern library combobox wireframes</h2>
+      <img width='550px' src={dqplCombobox} alt='' role='presentation' />
+    </div>
+  ),
+  (
+    <div>
+      <h2>Deque Pattern Library: Cauldron</h2>
+      <img src={cauldronLogo} alt='' width='150px' role='presentation' className='dqpl' />
+      <div>
+        <a href='https://pattern-library.dequelabs.com/' target='_blank'>
+          {'https://pattern-library.dequelabs.com/'}
+        </a>
+      </div>
+      <p>{'It\'s open source and accessible!'}</p>
+>>>>>>> 3a6cbe131ac9d640b540d63b55fbad2d407559af
     </div>
   ),
   (
     <div>
       <h1 className="title-centered">Thanks!</h1>
       <div className="contact-cards">
-        <img src={caitlin} width="100px" alt=""/>
+        <img src={caitlin} width="100px" alt="" role='presentation'/>
         <div className="contact-text">
           <strong>Caitlin Geier</strong>
           <p>caitlin.geier@deque.com</p>
@@ -393,7 +461,7 @@ combobo
         </div>
       </div>
       <div className="contact-cards">
-        <img src={harris} width="100px" alt=""/>
+        <img src={harris} width="100px" alt="" role='presentation'/>
         <div className="contact-text">
           <strong>Harris Schneiderman</strong>
           <p>harris.schneiderman@deque.com</p>
