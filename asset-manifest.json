@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.3fb4c0dc.css",
   "main.css.map": "static/css/main.3fb4c0dc.css.map",
-  "main.js": "static/js/main.72c9ef2b.js",
-  "main.js.map": "static/js/main.72c9ef2b.js.map",
+  "main.js": "static/js/main.aeec05ed.js",
+  "main.js.map": "static/js/main.aeec05ed.js.map",
   "static/media/caitlin.jpg": "static/media/caitlin.d29bc019.jpg",
   "static/media/cauldron.png": "static/media/cauldron.9f9e79cb.png",
   "static/media/code-vs-design.png": "static/media/code-vs-design.6ec4cb56.png",
@@ -13,6 +13,7 @@
   "static/media/filters-review-1.png": "static/media/filters-review-1.be9f65df.png",
   "static/media/filters-review-2-annotated.png": "static/media/filters-review-2-annotated.0f8b7ff2.png",
   "static/media/filters-review-2.png": "static/media/filters-review-2.f6924d10.png",
+  "static/media/focus-styles.png": "static/media/focus-styles.be4f84fd.png",
   "static/media/harris.jpg": "static/media/harris.607c376c.jpg",
   "static/media/multiselect-combobox-example-1.png": "static/media/multiselect-combobox-example-1.ee46a823.png",
   "static/media/multiselect-combobox-example-2.png": "static/media/multiselect-combobox-example-2.d62cf738.png",
