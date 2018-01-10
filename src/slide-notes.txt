@@ -23,6 +23,7 @@ Key points:
 
 Slide 6 - Framing the Problem: Existing Comboboxes (Harris)
 -------------------------------------------------------------
+Caveat first: we chose to build our own combobox because we felt it would improve usability, and we were confident we had enough a11y knowledge to actually pull it off. We put it off for a long time. Don't built crazy custom widget unless you absolutely have to!!!
 Lots of options out there - we looked at a ton.
 Problem for us: no options were completely accessible (or even close)
   - Visual a11y not great for most
@@ -35,6 +36,7 @@ Slide 7 - A11y === difficult (Caitlin / Harris)
 Build on previous slide - lots of finicky things to get right with a11y.
 Note: hopefully we're preaching to the choir wrt to collaborating with teammates
 Caveat: we work for an a11y company and eat/sleep/breathe a11y
+Plug shift left - way better to do a11y when designing / developing rather than later on - better opportunity to get it right b/c more people involved
 Gauge audience - designers? developers? how many devs work directly with designers and vice versa?
 
 
@@ -183,52 +185,57 @@ Slide 30 - Combobo events / methods (code sample) (Harris)
 key: exposing public methods and events makes integrating combobo into your app easy!
 
 
-Slide 32 - Combobo Demo (Harris)
-----------------------------
+Slide 32 - Combobo Demo - Single Select (Harris)
+--------------------------------------------------
 key: turn VO on to show off some awesome a11y features!
 
 
-Slide 33 - Usability Testing (Caitlin)
+Slide 33 - Combobo Demo - Multiselect (Harris)
+------------------------------------------------
+
+
+Slide 34 - Usability Testing (Caitlin)
 -----------------------------------------
 Segue: the awesome thing about making a coded prototype is we could do usability testing on it
 
 
-Slide 35 - Targeted usability testing (Caitlin)
+Slide 36 - Targeted usability testing (Caitlin)
 -------------------------------------------------------
 Usability testing = lots of time + money. Got to pick and choose what to test.
 Test the things that have the highest "unknown" quotient
 Especially the things where you can't even guess at the answers
 
 
-Slide 36 - Want to test with SR users? Code your prototype (Caitlin / Harris)
--------------------------------------------------------------------------------
+Slide 37 - Want to test with SR users? Code your prototype (Caitlin / Harris)
+-----------------------------------------------------------------------------
 SRs work on top of code - therefore, can't really test without the code.
 Means investing in accessibility early - in prototyping phase! Makes it WAY easier later
 
 
-Slide 37 - How we tested Combobo (Caitlin)
+Slide 38 - How we tested Combobo (Caitlin)
 --------------------------------------------
 Recruited internally b/c we knew we could get SR users AND a11y experts that way (cheating)
 Tested w/in context of application, not prototypes
-Targeted specific questions we had, like user expectations about tabbing back into the text field
-Wasn't just UX running show - Harris attended, too
+Targeted specific questions we had. Specifically: checkboxes normally activated by spacebar, but couldn't have that because ability to type in field still active when traversing checkboxes. Wanted to know if screen reader / keyboard only users were thrown off by that
+Wasn't just UX running show - Harris attended, too, and was able to ask more technical questions that I couldn't
 
 
-Second to last slide - plugging Dylan's talk
-----------------------------------------------
-
-
-Slide 41 - Benefits of pattern libraries
+Slide 42 - Benefits of pattern libraries
 -------------------------------------------------
 key: pattern libraries are awesome - they have TONS of benefits
 
-Slide 42 - Why isn't Combobo in the pattern library?
+Slide 43 - Why isn't Combobo in the pattern library?
 ------------------------------------------------------------
 - the first app that consumed it is older than the pattern library and has not adopted the pattern library yet
 - the apple rule (of 3):
   1st: build it
   2nd: improve it
   3rd: add is as a reusable component to the pattern library
+
+
+Second to last slide - plugging Dylan's talk
+----------------------------------------------
+
 
 Last slide - Thanks!
 -----------------------
