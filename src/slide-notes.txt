@@ -192,7 +192,7 @@ key: turn VO on to show off some awesome a11y features!
 
 Slide 33 - Combobo Demo - Multiselect (Harris)
 ------------------------------------------------
-
+key: showcase multiselect features (also show the no results text by typing "asdfasdfas")
 
 Slide 34 - Usability Testing (Caitlin)
 -----------------------------------------

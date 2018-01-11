@@ -1,6 +1,7 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import ComboboDemo from './ComboboDemo';
+import ComboboMulti from './ComboboMulti';
 // images
 import logo from '../../img/deque-logo-white.png';
 import caitlin from '../../img/caitlin.jpg';
@@ -335,6 +336,9 @@ combobo
   ),
   (
     <ComboboDemo />
+  ),
+  (
+    <ComboboMulti />
   ),
   (
     <div>
